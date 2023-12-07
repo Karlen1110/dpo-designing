@@ -1,0 +1,8 @@
+@startuml
+left to right direction
+actor "Клиент" as c
+actor "Работник склада" as r #pink;line:red;line.bold;text:Red
+rectangle "Список продукции" as l
+c --> r
+r --> l
+@enduml

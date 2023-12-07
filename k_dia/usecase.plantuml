@@ -1,0 +1,18 @@
+@startuml
+
+actor "Клиент" as c
+
+package Работники {
+    actor "Работник склада" as r
+    actor "Директор" as d
+}
+
+package Система{
+    usecase "Просмотр товаров" as UC1
+    usecase "Просмотр склада" as UC2
+    usecase "Создание поставки" as UC3
+    usecase "Добавление товаров" as UC4
+    
+}
+
+@enduml
