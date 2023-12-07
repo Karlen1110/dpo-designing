@@ -1,0 +1,13 @@
+@startuml "usic1"
+left to right direction
+actor "Директор" as d
+actor "Работник склада" as r
+actor "Клиент" as c
+  usecase "Пополнение запасов" as u1
+  usecase "Обслуживание клиента" as u2
+  usecase "Проверка наличия остатков" as u3
+d -> u1
+r --> u2
+r --> u3
+c --> u2
+@enduml
