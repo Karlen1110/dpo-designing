@@ -1,0 +1,52 @@
+@startuml "Clases_with_fields"
+legend right
+  Диаграмма классов системы
+endlegend
+
+class Product{
+  int: id 
+  string: name
+  int: count
+  int: order_id
+  get_product_by_order()
+  set_product()
+}
+
+class Storage{
+  int: id 
+  string: name
+  get_product_by_order()
+  set_product()
+}
+
+class Worker{
+  int: id 
+  string: name
+  get_worker_by_id()
+  add_worker()
+}
+
+class Order{
+  int: id 
+  int: userId
+  float: price
+  get_order_by_userId()
+  add_order_by_userId()
+}
+
+class User{
+  int: id 
+  string: name
+  get_username_by_id()
+  add_user()
+}
+
+Product "many" --o "1 " Storage: Хранится
+Storage "1  " o--- "many" Worker: Работают
+Order "many"*-- "1"User: Оформляет
+Storage "1" o--- "1 "Order: Находится
+
+
+
+
+@enduml

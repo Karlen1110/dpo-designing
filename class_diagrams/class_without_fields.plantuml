@@ -1,0 +1,9 @@
+@startuml "Clases_without_fields"
+legend right
+  Диаграмма классов системы
+endlegend
+Product "many" --o "1 " Storage: Хранится
+Storage "1  " o--- "many" Worker: Работают
+Order "many"*-- "1"User: Оформляет
+Storage "1" o--- "1 "Order: Находится
+@enduml

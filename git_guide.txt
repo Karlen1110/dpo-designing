@@ -1,1 +1,5 @@
-git add
+git add .
+git commit -m "Text"
+git push -u
+
+git pull
