@@ -4,6 +4,9 @@ actor "Директор" as d
 actor "Работник склада" as r
 actor "Клиент" as c
 
+legend right
+общая модель деятельности
+endlegend
 
   usecase "Управление остатками " as u1
 

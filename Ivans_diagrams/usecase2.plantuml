@@ -3,6 +3,9 @@ left to right direction
 actor "Директор" as d
 actor "Работник склада" as r
 actor "Клиент" as c
+legend right
+Модель бизнес-прецендентов
+endlegend
   usecase "Пополнение запасов" as u1
   usecase "Обслуживание клиента" as u2
   usecase "Проверка наличия остатков" as u3
