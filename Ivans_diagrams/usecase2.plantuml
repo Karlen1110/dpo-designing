@@ -1,4 +1,4 @@
-@startuml "usic1"
+@startuml
 left to right direction
 actor "Директор" as d
 actor "Работник склада" as r
